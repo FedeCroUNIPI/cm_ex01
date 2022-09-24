@@ -1,0 +1,16 @@
+import argparse
+
+def process(file_path):
+    print(f'Opening input file {file_path}...')
+    with open(file_path, 'r') as input_file:
+        text = input_file.read()
+    print(text)
+    print('Done.')
+
+process('C:\Users\feder\Desktop\cm_ex01\oliver_twist.txt')
+
+#if __name__ == '__main__':
+ #   parser = argparse.ArgumentParser(description='Print some book statistics')
+  #  parser.add_argument('infile', type=str, help='path to the input file')
+   # args = parser.parse_args()
+    # process(args.infile)
